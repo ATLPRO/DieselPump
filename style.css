@@ -1,0 +1,20 @@
+#lien:hover{
+    color: rgb(36, 178, 36);
+}
+.card{
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover{
+    transform: scale(1.05); /* Agrandir légèrement la carte */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
+}
+@media  screen and (min-width:576px) {
+    .carousel-inner{
+        display: flex;
+    }
+    .carousel-item{
+        display: block;
+        margin-right: 0;
+        flex: 0 0 calc(100%/3);
+    }
+}
