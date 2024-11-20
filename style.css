@@ -8,13 +8,24 @@
     transform: scale(1.05); /* Agrandir légèrement la carte */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
 }
-@media  screen and (min-width:576px) {
-    .carousel-inner{
+@media  screen and (max-width:576px) {
+     .carousel-inner{
         display: flex;
     }
     .carousel-item{
         display: block;
         margin-right: 0;
         flex: 0 0 calc(100%/3);
+    } 
+    #navbar-content{
+background-color: white;
     }
+   #im{
+    height: 50px;
+    width: 50px;
+    column-gap: 3;
+   }
+   #liens{
+    display: inline-block;
+   }
 }

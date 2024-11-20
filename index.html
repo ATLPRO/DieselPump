@@ -10,11 +10,13 @@
 </head>
 <body>
    <section style="overflow-x: hidden;" class="ms-1 me-1">
-        <header class="navbar navbar-expand-md navbar-light " style=" opacity: 1; height: 80px;background-color: rgb(242, 243, 243); position: fixed; width: 99.5%;transition: translate 0.3s ease-in-out; z-index: 1030;">
+        <header class="navbar navbar-expand-md navbar-light " style=" opacity: 1; background-color: rgb(242, 243, 243); position: fixed; width: 99.5%;transition: translate 0.3s ease-in-out; z-index: 1030;">
+           <div class="img-fluid d-none d-sm-block">
             <a href="#" class="navbar-brand col-6 col-md-5 col-sm-3  ">
-                <img src="Images/LOGO.png" alt="Logo" width="90" height="90" class="img-fluid">
-                <span class="navbar-text h2  "> Diesel Pump Engineering  </span>
-            </a> 
+                <img src="Images/LOGO.png" alt="Logo" width="90" height="90" >
+            </a>
+        </div> 
+        <h3 class="navbar-text h2 "> Diesel Pump Engineering  </h3>
             <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="14" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
                 <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
@@ -23,7 +25,7 @@
         <!-- <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-content">
             <span class="navbar-toggler-icon" style="height: 14px;width: 14px;"></span>
         </button> --> 
- <nav class="collapse navbar-collapse" id="navbar-content">
+ <nav class="collapse navbar-collapse " id="navbar-content">
     <ul class="navbar-nav ms-auto">
         <li class="nav-item"><a href="#Accueil"class="nav-link active" id="lien">Accueil</a></li>
         <li class="nav-item"><a href="#Services" class="nav-link" id="lien">Services</a></li>
@@ -64,7 +66,7 @@
                 <div class="card-body ">
                  <h1 class="h3 card-title">Lorem, ipsum dolor.</h1>
                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, suscipit et animi quia iusto culpa!</p>
-                    <a href="#" class="btn btn-success">Lire la suite</a>
+                    <a href="/service1.html" class="btn btn-success">Lire la suite</a>
                  </div>
         </div> 
      </div>
@@ -125,7 +127,7 @@
         <div class="    carousel-inner">
             <div class="carousel-item active">
                 <div class="row justify-content-center mt-5">
-                    <figure class="col-md-4   ">
+                    <figure class="col-md-4  figure ">
                      <img src="Images/BOSS GUY DPE LOGO.jpg" alt="maison" class="img-fluid img-thumbnail" style="height: 200px; width: 600px;">
                     </figure>
                 
@@ -228,7 +230,7 @@
                 <div class="col-12 col-lg-6">
                     <div class="mb-3 form-floating">
                         <input type="text" name="fname" id="fname" class="form-control" placeholder="Votre prenom"> 
-                        <label for="fname"> Votre prenom</label>
+                        <label for="fname"> Votre nom</label>
                     </div>
                 </div>
     
@@ -249,32 +251,33 @@
 </section>
 
 <!-- Partenaires -->
-<section class="mb-3 bg-dark" id="Partenaire">
-    <footer class="bg-dark text-white">
-        <div class="row">
-            <div class="col-lg-3 ms-2 col-md-justify-content-center col-sm-">
-                <h2 class="h3 ms-5 col-sm-text-center">Partenaires</h2>
-                <section class="row mt-3">
-                    <div class="col-3 ms-1"><img  style="height: 70px;width: 70px;"  src="Car_Logos/2000px-Toyota_Logo_silver.svg.png" alt="Toyota" ></div>
-                    <div class="col-3 ms-2"><img  style="height: 70px;width: 70px;" src="Car_Logos/1024px-Mercedes_Benz_Logo_11.jpg" alt="Mercesez"></div>
-                    <div class="col-3 ms-2"><img  style="height: 70px;width: 70px;" src="Car_Logos/768px-Renault_2009_logo.svg.png" alt="Mercesez"></div>
-                </section>
-                <section class="row ">    
-                    <div class="col-2 mt-5 ms-1"><img  style="height: 70px;width: 70px;"  src="Car_Logos/51Ks92NyjeL._AC_SX522_.jpg" alt="Toyota" ></div>
-                    <div class="col-2 ms-5 mt-5"><img  style="height: 70px;width: 70px;"  src="Car_Logos/580b57fcd9996e24bc43c496.png" alt="Toyota" ></div>
-                    <div class="col-3 mt-5 ms-4"><img  style="height: 70px;width: 70px;" src="Car_Logos/bosch-symbol.jpg" alt="Mercesez"></div>
-                </section>
-                <section class="row ">    
-                    <div class="col-2 mt-5 ms-1"><img  style="height: 70px;width: 70px;"  src="Car_Logos/Delphi-logo.png" alt="Toyota" ></div>
-                    <div class="col-2 ms-5 mt-5"><img  style="height: 70px;width: 70px;"  src="Car_Logos/download.png" alt="Toyota" ></div>
-                    <div class="col-3 mt-5 ms-4"><img  style="height: 70px;width: 70px;" src="Car_Logos/iveco-logo-vector-01.png" alt="Mercesez"></div>
-                </section>    
-               
-            </div>
-            <div class=" col-md-12 col-lg-3 ">
-                <h2 class="h3 ms-5 text-center ">Liens</h2>
-                <section class="col-12 col-md-6 ms-4 text-center">
-                    <ul class="navbar-nav  d-flex " style="size: 30px;"> 
+<section  id="Partenaire" class="mt-5">
+    <div class="  mt-5">
+        <h1 class="h3   text-success" style="font-style: normal; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; text-align: center;">Partenaires</h1>
+    </div>
+   
+            <section class="row mt-3">
+                <div class="col-2 " id="im"><img  style="height: 160px;width: 160px;"  src="Car_Logos/2000px-Toyota_Logo_silver.svg.png" alt="Toyota" ></div>
+                <div class="col-2 ms-2" id="im"><img  style="height: 160px;width: 160px;" src="Car_Logos/1024px-Mercedes_Benz_Logo_11.jpg" alt="Mercesez"></div>
+                <div class="col-2 ms-2" id="im"><img  style="height: 160px;width: 160px;" src="Car_Logos/768px-Renault_2009_logo.svg.png" alt="Mercesez"></div>
+                <div class="col-2 ms-2"  id="im"><img  style="height: 160px;width: 160px;"  src="Car_Logos/51Ks92NyjeL._AC_SX522_.jpg" alt="Toyota" ></div>
+            </section>
+            <section class="row ">    
+                <div class="col-2 mt-5 ms-1" id="im"><img  style="height: 150px;width: 150px;"  src="Car_Logos/Delphi-logo.png" alt="Toyota" ></div>
+                <div class="col-2 ms-5 mt-5" id="im"><img  style="height: 150px;width: 150px;"  src="Car_Logos/download.png" alt="Toyota" ></div>
+                <div class="col-2 ms-5 mt-5" id="im"><img  style="height: 150px;width: 150px;"  src="Car_Logos/580b57fcd9996e24bc43c496.png" alt="Toyota" ></div>
+                <div class="col-2 mt-5 ms-4" id="im"><img  style="height: 150px;width: 150px;" src="Car_Logos/bosch-symbol.jpg" alt="Mercesez"></div>
+                <div class="col-2 mt-5 ms-4" id="im"><img  style="height: 150px;width: 150px;" src="Car_Logos/iveco-logo-vector-01.png" alt="Mercesez"></div>
+            </section>
+      
+</section> 
+
+    <footer class="bg-dark text-white mt-3">
+        
+            
+                <h2 class="h3  text-center mt-5">Liens</h2>
+                <nav class=" ">
+                    <ul class="navbar-nav  ms-2" id="liens" style="size: 30px;"> 
                         <li class="nav-item"><a href="#Accueil"class="nav-link active"  id="Lien">Accueil</a></li>
                         <li class="nav-item"><a href="#Services" class="nav-link" id="lien">Services</a></li>
                         <li class="nav-item dropdown"><a href="#A propos" class="nav-link" id="lien" >A propos</a></li>
@@ -283,35 +286,33 @@
                         <li class="nav-item"><a href="#Contact" class="nav-link" id="lien">Contact</a></li>
                         <li class="nav-item"><a href="#Partenaire" class="nav-link" id="lien">Partenaire</a></li>
                     </ul>
-                </section>
-            </div>
-            <div class="col-4 ms-5 ">
-                
-                <div class=" col-sm-12 col-lg-12 col-md-12 col-12">
-                <h2 class="h3">Rejoignez-nous au :</h2>
+                </nav>
            
-        </div>
-                <section class="col-12 col-md-6 ms-4 text-center" >
-                <section class="row ">    
-                    <div class="col-2 mt-3 ms-5"><img src="Diesel Pump Engieneering Ltd/phone_48px.png" alt="tel" style="height: 30px;"></div>
-                </section>
-                 <section class="row">
-                    <div class="col-2 ms-5 mt-3"><img src="Diesel Pump Engieneering Ltd/whatsapp_48px.png" alt="whatsapp" style="height: 30px;"></div>
-                </section>
-                <section class="row">
-                    <div class="col-3 mt-3 ms-5"> <img src="Diesel Pump Engieneering Ltd/facebook_48px.png" alt="facebook" style="height: 30px;"></div>
-                </section>
-                <section class="row">
-                    <div class="col-3 mt-3 ms-5"> <img src="Diesel Pump Engieneering Ltd/Email_32px.png" alt="facebook" style="height: 30px;"></div>
-                </section>
-            </section> 
-            </div>
+                
+                <!-- <div class=" col-sm-12 col-lg-12 col-md-12 col-12"> -->
+                <h2 class="h3 text-center">Rejoignez-nous au :</h2>
+           
+      
+                <section class=" col-12 col-md-6 ms-4 text-center" >
+                  <div class="col-4"> 
+                  <img src="Diesel Pump Engieneering Ltd/phone_48px.png" alt="tel" style="height: 30px;">
+               
+                    <img src="Diesel Pump Engieneering Ltd/whatsapp_48px.png" alt="whatsapp" style="height: 30px;">
+                
+                
+                     <img src="Diesel Pump Engieneering Ltd/facebook_48px.png" alt="facebook" style="height: 30px;">
+                
+                
+                     <img src="Diesel Pump Engieneering Ltd/Email_32px.png" alt="facebook" style="height: 30px;">
+                    </div>
         </div>
     </footer>
-</section> 
+
 </section>
-<script >
-   
+<script>
+    
 </script>
+
+
 </body>
 </html>
