@@ -8,6 +8,18 @@
     transform: scale(1.05); /* Agrandir légèrement la carte */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Ajouter une ombre */
 }
+.overlay {
+    position: absolute;
+    top: 38%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste le point d'origine */
+    /*background-color: rgba(0, 0, 0, 0.5);  Fond semi-transparent */
+    padding: 10px;
+    border-radius: 5px;
+}
+.h4{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 @media  screen and (max-width:576px) {
      .carousel-inner{
         display: flex;
@@ -23,7 +35,7 @@ background-color: white;
    #im1,#im2,#im3,#im4,#im5,#im6{
     height: 50px;
     width: 50px;
-    margin-right: 90px;
+    margin-right: 70px;
     text-align: center;
    }
    #im4,#im5,#im6{
