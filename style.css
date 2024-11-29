@@ -20,6 +20,12 @@
 .h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+#liens {
+    display: flex; /* Utiliser flexbox pour aligner les éléments en ligne */
+    list-style-type: none; /* Supprimer les puces */
+    padding: 0; /* Supprimer le padding par défaut */
+    margin: 0; /* Supprimer la marge par défaut */
+}
 @media  screen and (max-width:576px) {
      .carousel-inner{
         display: flex;
