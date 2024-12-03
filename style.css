@@ -20,21 +20,65 @@
 .h4{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+/* Appliquer le Flexbox à la liste */
+/* Appliquer le Flexbox à la liste */
 #liens {
-    display: flex; /* Utiliser flexbox pour aligner les éléments en ligne */
-    list-style-type: none; /* Supprimer les puces */
-    padding: 0; /* Supprimer le padding par défaut */
-    margin: 0; /* Supprimer la marge par défaut */
+    display: flex; /* Aligner les éléments horizontalement */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    list-style: none; /* Enlever les puces */
+    padding: 0; /* Enlever les marges par défaut */
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
 }
-@media  screen and (max-width:576px) {
-     .carousel-inner{
+
+/* Assurez-vous que les éléments prennent la largeur nécessaire */
+#liens .nav-item {
+    margin-right: 20px; /* Espacer les éléments */
+}
+
+/* Retirer la marge droite sur le dernier élément */
+#liens .nav-item:last-child {
+    margin-right: 0;
+}
+
+/* Appliquer un style de lien avec un peu de padding */
+#liens .nav-link {
+    padding: 10px 15px; /* Ajouter de l'espace autour du texte */
+    text-decoration: none; /* Enlever le soulignement */
+    color: #f0eeee; /* Couleur de texte */
+    font-weight: bold; /* Optionnel: mettre le texte en gras */
+}
+
+/* Ajouter des styles de survol pour les liens */
+#liens .nav-link:hover {
+    color: #086b1c; /* Couleur de survol */
+}
+
+/* Optionnel: Modifier les classes Bootstrap pour ne pas interférer */
+.navbar-nav {
+    flex-wrap: nowrap; /* S'assurer que le navbar ne se plie pas en plusieurs lignes */
+}
+
+.nav-item {
+    display: inline-flex; /* Forcer les items à être en ligne */
+    align-items: center; /* Assurer que le texte est bien aligné au centre */
+}
+@media  screen and (max-width:768px) {
+     /* .carousel-inner{
         display: flex;
     }
     .carousel-item{
         display: block;
         margin-right: 0;
         flex: 0 0 calc(100%/3);
-    } 
+    }  */
+    .carousel-inner .row {
+        display: block; /* Chaque image prend toute la largeur de la slide */
+    }
+
+    .carousel-inner .col-12 {
+        width: 100%; /* Chaque image prend 100% de la largeur */
+        margin-bottom: 10px; /* Ajoute un espace entre les images */
+    }
     #navbar-content{
 background-color: white;
     }
@@ -56,4 +100,15 @@ background-color: white;
    #liens{
     display: inline-block;
    }
+}
+/* Pour les grands écrans (plus de 767px), chaque slide contient trois images */
+@media (min-width: 768px) {
+    .carousel-item .row {
+        display: flex;
+        justify-content: space-between; /* Aligne les images horizontalement */
+    }
+
+    .carousel-item .col-md-4 {
+        width: 32%; /* Chaque image occupe un tiers de la largeur */
+    }
 }
