@@ -1,4 +1,4 @@
-<?
+ <?php 
 if ($_SERVER["REQUEST_METHOD"]=="POST") {
     // recuperer et securiser les donnees du formulaire
     $name= htmlspecialchars($_POST['fname']);
@@ -16,8 +16,9 @@ if ($_SERVER["REQUEST_METHOD"]=="POST") {
     }
     else{
         echo "Echec de l'envoie du message.";
-    }else{
-        echo "Aucune données reçue.";
     }
 }
-?>
+else{
+    echo "Aucune données reçue.";
+}
+?> 

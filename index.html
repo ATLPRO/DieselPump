@@ -6,7 +6,15 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="js/bootstrap.bundle.min.js" defer></script>
+    <script src="script.js"></script>
     <title>Diesel Pump Engieneering Ltd</title>
+    <!-- Pour recevoir les messages sur email -->
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        emailjs.init('A4pr9ROjYWkkquF-u')// utilisateur
+      </script>
 </head>
 <body>
    <section style="overflow-x: hidden;" class="ms-1 me-1">
@@ -228,7 +236,7 @@
 
    
             <h2 class="h3 text-center">CONTACTEZ-NOUS</h2><hr class="" width="500px" center></br>
-            <form action="send_email.php">
+            <form action="" method="POST" id="contact">
             <fieldset>
             <div class="row">
                 <div class="col-12 col-lg-6">
@@ -339,9 +347,21 @@
 
 </section>
 <script>
-    
-</script>
+    document.getElementById('contact').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-
+        emailjs.send("service_tpd8c59", "template_1bj3osf", {
+            name: document.getElementById('fname').value,
+            email: document.getElementById('email').value,
+            message: document.getElementById('message').value,
+        })
+        .then(function(response) {
+            alert("Message envoyé avec succès !");
+        }, function(error) {
+            alert("Une erreur s'est produite. Veuillez réessayer.");
+            console.log("Erreur:", error);
+        });
+    });
+    </script>
 </body>
 </html>
