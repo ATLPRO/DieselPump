@@ -62,15 +62,62 @@
     display: inline-flex; /* Forcer les items à être en ligne */
     align-items: center; /* Assurer que le texte est bien aligné au centre */
 }
-@media  screen and (max-width:768px) {
-     /* .carousel-inner{
-        display: flex;
+.acc{
+    margin-top: 6.2%;
+}
+.marquee-container {
+    width: 100%;
+    /* background-color: rgb(242, 243, 243); */
+    color: #0fbb1a;
+    padding: 1px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: -39px;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 30px;
+    padding-left: 100%;
+}
+.service{
+    margin-top: -90px;
+}
+.test{
+    text-align: center;
+    padding: 90px;
+}
+.galerie,.contact,.part{
+    height: 150px;
+    background-color: rgb(84, 246, 84);
+}
+.texte,.texte1,.texte2{
+    padding-top: 50px;
+}
+.contact{
+    margin-top: -90px;
+}
+.part{
+    margin-top: -90px;
+}
+.num{
+    margin-left: -70px;
+    font-size: 20px;
+    
+}
+/* Animation de défilement */
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
     }
-    .carousel-item{
-        display: block;
-        margin-right: 0;
-        flex: 0 0 calc(100%/3);
-    }  */
+    100% {
+        transform: translateX(-100%);
+    }
+}
+@media  screen and (max-width:768px) {
+   
     .carousel-inner .row {
         display: block; /* Chaque image prend toute la largeur de la slide */
     }
@@ -100,6 +147,10 @@ background-color: white;
    #liens{
     display: inline-block;
    }
+}
+.num{
+    font-size: 15px;
+    margin-left: -10px;
 }
 /* Pour les grands écrans (plus de 767px), chaque slide contient trois images */
 @media (min-width: 768px) {
