@@ -178,7 +178,9 @@ background-color: white;
     margin-top: -90px;
     padding-top: 60px;
 }
-
+.Nous{
+    font-size: 24px;
+}
 /* Pour les grands écrans (plus de 767px), chaque slide contient trois images */
 @media (min-width: 768px) {
     .carousel-item .row {
