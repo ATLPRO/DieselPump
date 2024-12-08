@@ -63,7 +63,7 @@
     align-items: center; /* Assurer que le texte est bien aligné au centre */
 }
 .acc{
-    margin-top: 6.2%;
+    margin-top: 10%;
 }
 .marquee-container {
     width: 100%;
@@ -91,7 +91,7 @@
 }
 .galerie,.contact,.part{
     height: 150px;
-    background-color: rgb(84, 246, 84);
+   
 }
 .texte,.texte1,.texte2{
     padding-top: 50px;
@@ -107,6 +107,8 @@
     font-size: 20px;
     
 }
+
+
 /* Animation de défilement */
 @keyframes marquee {
     0% {
@@ -147,11 +149,36 @@ background-color: white;
    #liens{
     display: inline-block;
    }
+   .display-4{
+    font-size: 25px;
+    width: 400px;
+    
+   }
+   #mainBanner{
+    height: 300px;
+   }
 }
 .num{
     font-size: 15px;
-    margin-left: -10px;
+    margin-left: -30px;
 }
+.dtexte{
+    text-align: center;
+    margin-left: -50px;
+}
+.dimg{
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+}
+.aboutus{
+   
+    text-align: center;
+    height: 150px;
+    margin-top: -90px;
+    padding-top: 60px;
+}
+
 /* Pour les grands écrans (plus de 767px), chaque slide contient trois images */
 @media (min-width: 768px) {
     .carousel-item .row {
@@ -163,3 +190,50 @@ background-color: white;
         width: 32%; /* Chaque image occupe un tiers de la largeur */
     }
 }
+
+
+#mainBanner {
+    position: relative;
+    height: auto;
+    overflow: hidden;
+   
+  }
+
+  .banner-img {
+    height:auto;
+    object-fit: cover;
+    filter: brightness(70%);
+
+  }
+
+  .banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Opacité moyenne sur le fond */
+    z-index: 2;
+  }
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .banner-content h1,
+  .banner-content p {
+    color: white;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 15px 30px;
+  }
+ 
