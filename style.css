@@ -63,16 +63,16 @@
     align-items: center; /* Assurer que le texte est bien aligné au centre */
 }
 .acc{
-    margin-top: 10%;
+    margin-top: 9.5%;
 }
 .marquee-container {
     width: 100%;
-    /* background-color: rgb(242, 243, 243); */
-    color: #0fbb1a;
+    
+    color: #ebefec; 
     padding: 1px 0;
     overflow: hidden;
     position: relative;
-    margin-top: -39px;
+    margin-top: -20px;
 }
 
 .marquee-text {
@@ -81,6 +81,7 @@
     animation: marquee 20s linear infinite;
     font-size: 30px;
     padding-left: 100%;
+    padding-top: -11px;
 }
 .service{
     margin-top: -90px;
@@ -119,7 +120,9 @@
     }
 }
 @media  screen and (max-width:768px) {
-   
+   .h1{
+    font-size: 25px;
+   }
     .carousel-inner .row {
         display: block; /* Chaque image prend toute la largeur de la slide */
     }
@@ -157,10 +160,24 @@ background-color: white;
    #mainBanner{
     height: 300px;
    }
+   .acc{
+    height: 400px;
+   }
+   .num{
+    margin-left: -57px;
+    margin-top: 4px;
+    font-size: 12px;
+   }
 }
-.num{
-    font-size: 15px;
-    margin-left: -30px;
+@media screen and (max-width:900px) {
+    .num{
+        margin-left: -57px;
+        margin-top: 4px;
+        font-size: 12px;
+}
+.h1{
+    font-size: 20px;
+}
 }
 .dtexte{
     text-align: center;
@@ -190,6 +207,11 @@ background-color: white;
 
     .carousel-item .col-md-4 {
         width: 32%; /* Chaque image occupe un tiers de la largeur */
+    }
+    .num{
+        font-size: 15px;
+        margin-left: -90px;
+        margin-top: 4px;
     }
 }
 
