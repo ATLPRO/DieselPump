@@ -83,9 +83,7 @@
     padding-left: 100%;
     padding-top: -11px;
 }
-.service{
-    margin-top: -90px;
-}
+
 .test{
     text-align: center;
     padding: 90px;
@@ -157,12 +155,17 @@ background-color: white;
     width: 400px;
     
    }
-   #mainBanner{
-    height: 300px;
-   }
+   
    .acc{
-    height: 400px;
+    margin: 0px;
    }
+   .carousel-inner{
+    margin-top: 0px;
+    
+}
+   .service{
+    margin-top: -390px;
+}
    .num{
     margin-left: -57px;
     margin-top: 4px;
@@ -218,9 +221,9 @@ background-color: white;
 
 #mainBanner {
     position: relative;
-    height: auto;
+    height: 900px;
     overflow: hidden;
-   
+   margin-top: 100px;
   }
 
   .banner-img {
@@ -229,7 +232,10 @@ background-color: white;
     filter: brightness(70%);
 
   }
-
+.carousel-inner{
+    margin-top: 0px;
+    
+}
   .banner-overlay {
     position: absolute;
     top: 0;
@@ -260,4 +266,9 @@ background-color: white;
     font-size: 18px;
     padding: 15px 30px;
   }
- 
+ .texte{
+   font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+ }
