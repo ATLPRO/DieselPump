@@ -55,6 +55,9 @@
         height: 50px;
         margin-left: -25px;
     }
+    .h1{
+        font-size: 20px;
+    }
 }
 .marquee-container {
     width: 100%;
