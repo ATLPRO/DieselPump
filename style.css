@@ -293,3 +293,7 @@ background-color: white;
   font-weight: weight;
   font-style: normal;
  }
+ .navbar-toggler{
+    margin-right: 9px;
+    margin-bottom: 15px;
+ }
