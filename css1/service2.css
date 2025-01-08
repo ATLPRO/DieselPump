@@ -56,3 +56,29 @@
         margin-left: -25px;
     }
 }
+.marquee-container {
+    width: 100%;
+    
+    color: #ebefec; 
+    padding: 1px 0;
+    overflow: hidden;
+    position: relative;
+    margin-top: -20px;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 30px;
+    padding-left: 100%;
+    padding-top: -11px;
+}
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}

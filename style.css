@@ -163,14 +163,38 @@ background-color: white;
     margin-top: 0px;
     
 }
-   .service{
-    margin-top: -390px;
-}
+
    .num{
     margin-left: -57px;
     margin-top: 4px;
     font-size: 12px;
    }
+   #mainBanner{
+    margin-bottom: 0px;
+   }
+}
+@media (min-width: 321px) and (max-width: 990px) {
+    .part{
+        margin-top: -190px;
+        padding-top: 139px;
+        margin-bottom: 160px;
+    }
+    .Propos{
+      
+        margin-top:-270px;
+        padding-top: 450px;
+        margin-bottom: 0px;
+    }
+    .galerie{
+        margin-top:-180px;
+        padding-top: 353px;
+        margin-bottom: 190px;
+    }
+       .service,.Contact{
+        margin-top: -80px;
+        padding-top: 220px;
+        margin-bottom: 0px;
+    }
 }
 @media screen and (max-width:900px) {
     .num{
@@ -191,13 +215,7 @@ background-color: white;
     height: 50px;
     margin-left: -25px;
 }
-.aboutus{
-   
-    text-align: center;
-    height: 150px;
-    margin-top: -90px;
-    padding-top: 60px;
-}
+
 .Nous{
     font-size: 24px;
 }
