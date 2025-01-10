@@ -263,7 +263,7 @@ background-color: white;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Opacité moyenne sur le fond */
+    background: rgba(0, 0, 0, 0.2); /* Opacité moyenne sur le fond */
     z-index: 2;
   }
 
