@@ -297,3 +297,16 @@ background-color: white;
     margin-right: 19px;
     margin-bottom: 15px;
  }
+ /* iconne de validation  */
+ .icon-verif{
+width: 30px;
+position: absolute;
+right: 9px;
+top: 15px;
+display: none;
+ }
+ .message-alerte{
+    margin: 0px 2px;
+    color: crimson;
+    display:none ;
+ }
